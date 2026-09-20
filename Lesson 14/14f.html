@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                height: 3000px;
+            }
+
+            div {
+                font-family: Arial;
+            }
+
+            .sidebar-1 {
+                background-color: rgb(33, 33, 33);
+                position: fixed;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .dp {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-bottom: 10px;
+            }
+
+            .sidebar-2 {
+                background-color: rgb(80, 78, 78);
+                position: fixed;
+                left: 70px;
+                top: 0;
+                bottom: 0;
+                width: 150px;
+                padding-top: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .info {
+                color: white;
+                font-size: 14px;
+            }
+
+            .plus {
+                color: rgb(150, 150, 150);
+                font-size: 25px;
+            }
+
+            .channel {
+                color: rgb(150, 150, 150);
+                margin-bottom: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar-1">
+            <div>
+                <img class="dp" src="cat.png">
+            </div>
+            <div>
+                <img class="dp" src="cat2.png">
+            </div>
+            <div>
+                <img class="dp" src="cat3.png">
+            </div>
+        </div>
+        <div class="sidebar-2">
+            <div class="header">
+                <div class="info">INFO</div>
+                <div class="plus">+</div>
+            </div>
+            <div class="channel"># new-videos</div>
+            <div class="channel"># updates</div>
+            <div class="channel"># faq</div>
+        </div>
+    </body>
+</html>
