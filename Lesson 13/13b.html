@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lesson 13</title>
+    <style>
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+        }
+
+        .pink{
+            background-color: lightpink;
+            width:100px;
+        }
+        
+        .blue{
+            background-color: lightblue;
+            width:200px;
+        }
+
+        .row-2{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .txt{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="pink"></div>
+        <div class="blue">
+            <div class="row-1"> row 1 </div>
+            <div class="row-2"> 
+                <div class="txt"> row 2 </div>
+                <div class="txt"> row 2 </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
