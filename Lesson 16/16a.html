@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lesson 16</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Roboto, Arial;
+            }
+
+            .header {
+                height: 55px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .left-section {
+                display: flex;
+                align-items: center;
+            }
+
+            .hamburger-menu {
+                width: 24px;
+                margin-right: 25px;
+            }
+
+            .logo {
+                width: 90px;
+            }
+
+            .middle-section {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                max-width: 600px;
+                margin-left: 50px;
+            }
+
+            .search-bar {
+                height: 36px;
+                flex: 1;
+                border: 1px solid #ccc;
+                padding-left: 12px;
+                font-size: 16px;
+            }
+
+            .search-button {
+                height: 40px;
+                width: 64px;
+                border: 1px solid #ccc;
+                background-color: #f8f8f8;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                position: relative;
+            }
+
+            .search-icon {
+                width: 24px;
+            }
+
+            .voice-button {
+                height: 40px;
+                width: 40px;
+                border: none;
+                border-radius: 50%;
+                margin-left: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .voice-icon {
+                width: 24px;
+            }
+
+            .right-section {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+            }
+
+            .upload-container,
+            .apps-container,
+            .notifications-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .upload-icon,
+            .apps-icon,
+            .notifications-icon {
+                width: 24px;
+            }
+
+            .notifications-count {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+
+                background-color: red;
+                color: white;
+
+                font-size: 10px;
+
+                padding: 2px 5px;
+                border-radius: 50%;
+            }
+
+            .dp {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+
+            .search-button .tooltip,
+            .voice-button .tooltip,
+            .upload-container .tooltip,
+            .apps-container .tooltip,
+            .notifications-container .tooltip {
+
+                font-family: Roboto, Arial;
+
+                position: absolute;
+
+                background-color: gray;
+                color: white;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 8px;
+                padding-right: 8px;
+                border-radius: 2px;
+                font-size: 12px;
+                bottom: -30px;
+                opacity: 0;
+                transition: opacity 0.15s;
+                pointer-events: none;
+                white-space: nowrap;
+                z-index: 100;
+            }
+
+            .search-button:hover .tooltip,
+            .voice-button:hover .tooltip,
+            .upload-container:hover .tooltip,
+            .apps-container:hover .tooltip,
+            .notifications-container:hover .tooltip {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="hamburger-menu.png">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+            </div>
+
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+
+                <button class="search-button">
+                    <img class="search-icon" src="search.png">
+                    <div class="tooltip"> Search </div>
+                </button>
+
+                <button class="voice-button">
+                    <img class="voice-icon" src="voice-search.png">
+                    <div class="tooltip"> Search with your voice </div>
+                </button>
+            </div>
+
+            <div class="right-section">
+                <div class="upload-container">
+                    <img class="upload-icon" src="upload.png">
+                    <div class="tooltip"> Create </div>
+                </div>
+
+                <div class="apps-container">
+                    <img class="apps-icon" src="apps.png">
+                    <div class="tooltip"> YouTube Apps </div>
+                </div>
+
+                <div class="notifications-container">
+                    <img class="notifications-icon" src="notification.png">
+                    <div class="notifications-count"> 2 </div>
+                    <div class="tooltip"> Notifications </div>
+                </div>
+
+                <img class="dp" src="cat.png">
+            </div>
+        </div>
+    </body>
+</html>
